@@ -24,7 +24,7 @@ jobs:
           run: terraform validate
         - name: workspace selction and run terrafom plan
           run: |
-            terrafrom workspace select prod
-            terrafrom plan -var-file=prod.tfvars
+            terraform workspace select prod
+            terraform plan -var-file=prod.tfvars
         
           
