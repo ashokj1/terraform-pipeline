@@ -22,5 +22,9 @@ jobs:
           run: terraform fmt
         - name: Terrafrom validate
           run: terraform validate
+        - name: workspace selction and run terrafom plan
+          run: |
+            terrafrom workspace select prod
+            terrafrom plan -var-file=prod.tfvars
         
           
