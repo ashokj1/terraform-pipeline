@@ -26,5 +26,10 @@ jobs:
           run: |
             terraform workspace select prod
             terraform plan -var-file=prod.tfvars
+        - name: creating actual infra
+          run: terraform apply -var-file=prod.tfvars -auto-approve
+        - name: destroying infra
+          run: terraform destroy -var-file=prod.tfvars -auto-approve
+          
         
           
