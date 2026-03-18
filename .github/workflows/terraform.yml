@@ -21,6 +21,6 @@ jobs:
         - name: Terraform fmt
           run: terraform fmt
         - name: Terrafrom validate
-          run: terrafrom validate
+          run: terraform validate
         
           
