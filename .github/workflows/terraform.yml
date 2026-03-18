@@ -6,7 +6,6 @@ jobs:
       steps:
         - name: welcome to firststep
           run: echo "welcome first terraform"
-		  
         - name: Checkout code
           uses: actions/checkout@v4
 
