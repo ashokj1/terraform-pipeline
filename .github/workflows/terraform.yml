@@ -8,10 +8,8 @@ jobs:
           run: echo "welcome first terraform"
         - name: Checkout code
           uses: actions/checkout@v4
-
         - name: Setup Terraform
           uses: hashicorp/setup-terraform@v3
-
         - name: Configure AWS Credentials
           uses: aws-actions/configure-aws-credentials@v4
           with: 
